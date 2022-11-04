@@ -1,0 +1,9 @@
+@import './cadastro/cadastro.css';
+@import './contato/contato.css';
+@import './global/header.css';
+@import './global/footer.css';
+@import './global/global.css';
+@import './login/login.css';
+@import './recuperacao/recuperacao.css';
+@import './sobre/sobre.css';
+@import './index/index.css';

@@ -1,0 +1,41 @@
+body {
+    margin: 0px;
+    color: #fff;
+    background-color: #000;
+}
+
+h1,
+h2,
+h3,
+h4,
+ul,
+p {
+    margin: 0px;
+}
+
+h1 {
+    font-family: 'Roboto', sans-serif;
+}
+
+p,
+span {
+    font-family: 'Poppins', sans-serif;
+}
+
+ul {
+    padding: 0px;
+    list-style: none;
+}
+
+a {
+    font-family: 'Roboto', sans-serif;
+    color: #fff;
+    text-decoration: none;
+    display: block;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}

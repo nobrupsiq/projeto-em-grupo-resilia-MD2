@@ -1,0 +1,5 @@
+#979797 Opacity 23%
+border: 1px solid #fff
+
+placeholder color: #717171
+
