@@ -4,7 +4,7 @@
     max-width: 80rem;
     margin: 0 auto;
     justify-content: space-between;
-    padding: 0.625rem;
+    padding: 10px 20px;
 }
 
 .menu-logo img {
@@ -20,6 +20,11 @@
     padding: 0.5rem;
 }
 
+.links-internos li {
+    display: flex;
+    align-items: center;
+}
+
 .links-internos li a::after {
     content: '';
     display: block;
@@ -32,6 +37,10 @@
 .links-internos ul li a:hover::after,
 .links-internos ul li a.ativo::after {
     width: 100%;
+}
+
+#menu li:last-child::after {
+    content: url(../../img/menu/user.svg);
 }
 
 /* Mobile menu */
@@ -110,5 +119,8 @@
     .links-internos.active #hamburguer::after {
         transform: rotate(-135deg);
         top: -7px;
+    }
+    .links-internos li {
+        display: block;
     }
 }
