@@ -20,6 +20,7 @@
 .introducao h1 {
     padding: 40px 60px 60px 60px;
     font-size: 28px;
+    color: #c0c0c0;
 }
 
 .introducao a {
@@ -43,10 +44,12 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 120px 20px;
+    padding: 120px 80px 40px 80px;
+    flex-wrap: wrap;
 }
 .introducao-2-img {
-    max-width: 720px;
+    max-width: 600px;
+    min-width: 400px;
 }
 
 .intro-2-text h1 {
@@ -86,4 +89,23 @@
 
 .patrocinadores img {
     max-width: 180px;
+}
+
+@media (max-width: 500px) {
+    .introducao h1 {
+        font-size: 20px;
+    }
+    .introducao-2-container {
+        flex-wrap: wrap;
+        padding: 40px 0px;
+        text-align: center;
+        width: 220px;
+        text-align: start;
+    }
+    .introducao-2-container img {
+        max-width: 400px;
+    }
+    .introducao-2-container h1 {
+        font-size: 34px;
+    }
 }

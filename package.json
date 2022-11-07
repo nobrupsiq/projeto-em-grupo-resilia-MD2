@@ -18,6 +18,8 @@
   },
   "homepage": "https://github.com/nobrupsiq/projeto-em-grupo-resilia-MD2#readme",
   "dependencies": {
+    "animejs": "^3.2.1",
+    "aos": "^2.3.4",
     "jquery-particles": "^2.5.1"
   }
 }
