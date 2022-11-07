@@ -1,0 +1,5 @@
+#particles-js {
+    position: relative;
+    z-index: 1;
+    height: 85vh;
+}

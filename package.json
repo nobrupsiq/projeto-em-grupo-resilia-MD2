@@ -1,0 +1,23 @@
+{
+  "name": "projeto-em-grupo-resilia-md2",
+  "version": "1.0.0",
+  "description": "",
+  "main": "script.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nobrupsiq/projeto-em-grupo-resilia-MD2.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/nobrupsiq/projeto-em-grupo-resilia-MD2/issues"
+  },
+  "homepage": "https://github.com/nobrupsiq/projeto-em-grupo-resilia-MD2#readme",
+  "dependencies": {
+    "jquery-particles": "^2.5.1"
+  }
+}

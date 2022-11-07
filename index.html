@@ -2,50 +2,89 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-        href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&family=Roboto:wght@400;500;700&display=swap"
-        rel="stylesheet" />
-    <link rel="stylesheet" href="./assets/css/style.css" />
-    <title>Home</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&family=Roboto:wght@400;500;700&display=swap"
+    rel="stylesheet" />
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r79/three.min.js"></script>
+  <link rel="stylesheet" href="./assets/css/style.css" />
+  <link rel="stylesheet" href="particle.css" />
+  <title>Home</title>
+
+  <script defer src="./particles.js/particles.js"></script>
+  <script defer src="./particles.js/demo/js/app.js"></script>
+
+  <script defer src="script.js"></script>
 </head>
 
 <body>
-    <header class="header">
-        <div class="menu-logo">
-            <img src="./assets/img/menu/logo.svg" alt="Logotipo da empresa" />
-        </div>
-        <nav class="links-internos">
-            <button id="btn-mobile">Menu
-                <span id="hamburguer"></span>
-            </button>
-            <ul id="menu">
-                <li><a class="ativo" href="#">Home</a></li>
-                <li><a href="./sobre.html">Sobre</a></li>
-                <li><a href="./contato.html">Contato</a></li>
-                <li><a href="./login.html">Login</a></li>
-            </ul>
-        </nav>
-        </div>
-    </header>
+  <header class="header bg-index">
 
+    <div class="menu-logo">
+      <img src="./assets/img/menu/logo.svg" alt="Logotipo da empresa" />
+    </div>
+    <nav class="links-internos">
+      <button id="btn-mobile">
+        Menu
+        <span id="hamburguer"></span>
+      </button>
+      <ul id="menu">
+        <li><a class="ativo" href="#">Home</a></li>
+        <li><a href="./sobre.html">Sobre</a></li>
+        <li><a href="./contato.html">Contato</a></li>
+        <li><a href="./login.html">Login</a></li>
+      </ul>
+    </nav>
+  </header>
 
-    <!-- CODAR AQUI -->
+  <main>
+    <section class="introducao-container">
+      <!-- PARTICULAS -->
+      <div class="count-particles">
+      </div>
+      <div id="particles-js">
+      </div>
+      <div class="introducao">
+        <img src="./assets/img/home/OMNE-title.svg" alt="Logo da empresa" />
+        <h1>Somos a frontenders e estamos lançando um novo serviço de entregas através de drones para lojas do
+          metaverso.</h1>
+        <a href="./sobre.html">Explore agora</a>
+      </div>
+    </section>
 
+    <section class="introducao-2-container">
+      <div class="introducao-2-img">
+        <img src="./assets/img/home/drone-home.png" alt="Drone">
+      </div>
+      <div class="intro-2-text">
+        <h1>OMNE X-PRO</h1>
+        <p>A revolução tecnológica aplicada ao OMNE X-PRO traz recursos e funcionalidades mais inovadores e potentes,
+          permitindo
+          máxima otimização de tempo em suas operações de entrega.</p>
+      </div>
+    </section>
 
-    <footer class=" footer">
-        <p>OMNI © 2022</p>
-        <span>
-            <a href=""><img src="./assets/img/footer/twitter.svg" width="28" alt="Twitter logo"></a>
-            <a href=""><img src="./assets/img/footer/instagram.svg" width="28" alt="Instagram logo"></a>
-        </span>
-    </footer>
+    <section class="patrocinadores">
+      <img src="./assets/img/patrocinadores/binance.svg" alt="Binance logo">
+      <img src="./assets/img/patrocinadores/bit-finance.svg" alt="BitFinance logo">
+      <img src="./assets/img/patrocinadores/starlink.svg" alt="starlink logo">
+      <img src="./assets/img/patrocinadores/meta.svg" alt="META logo">
+    </section>
 
-    <script src="./assets/js/script.js"></script>
-    <script src="./assets/js/menu-mobile.js"></script>
+  </main>
+
+  <footer class="footer">
+    <p>OMNE © 2022</p>
+    <span>
+      <a href=""><img src="./assets/img/footer/twitter.svg" width="28" alt="Twitter logo" /></a>
+      <a href=""><img src="./assets/img/footer/instagram.svg" width="28" alt="Instagram logo" /></a>
+    </span>
+  </footer>
+
+  <script src="./assets/js/menu-mobile.js"></script>
 </body>
 
 </html>
