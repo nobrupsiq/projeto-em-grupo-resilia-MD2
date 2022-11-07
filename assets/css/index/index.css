@@ -28,8 +28,8 @@
     text-transform: uppercase;
     border: 2px solid #fff;
     border-radius: 4px;
-    transition: 0.3s;
     pointer-events: all;
+    transition: 0.4s;
 }
 
 .introducao a:hover {
