@@ -1,0 +1,122 @@
+body{
+    background-image: url(./assets/img/cadastro/cadastro-bg.png);
+    background-position: 20% 30%;
+    background-size: cover;
+}
+
+.titulo{
+    text-align: center;
+}
+/*formulario*/
+form{
+    width: 709px;
+    height: 985px;
+    left: 365px;
+    top: 249px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 20px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    color: #fff;
+    background: rgba(0, 0, 0, 0.76);
+    border: 2px solid black;
+    border-radius: 10px;
+}
+/*conteudos que usam todo o comprimento do formulario*/
+.rg, 
+.email, 
+.titulo,
+.divbutton{
+    grid-column: span 2;
+}
+
+/*fui direto na div para ter uma separação entre as div's*/
+div{
+    padding: 10px;
+}
+/*label e input*/
+/*alterar a altura do input/ qunado eu altero se quebra*/
+label{
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+}
+
+input, label{
+    display: block;
+    width: 100%;
+}
+
+input:focus, label:focus {
+    outline: none;
+}
+
+input{
+    font-size: 0.9rem;
+    padding: 3px;
+    background: rgba(151, 151, 151, 0.23);
+    border: 1px solid #FFF;
+    border-radius: 5px;
+    color: #FFF;
+    left: 730px;
+    top: 808px;
+}
+
+input::placeholder {
+    color: #717171
+}
+
+
+/*botão*/
+
+.divbutton{
+    text-align: center;
+}
+.button {
+    background-color: #000;
+    color: #FFF;
+    border: 3px solid #FFF;
+    border-radius: 4px;
+    width: 253px;
+    height: 43px;
+    left: 593px;
+    top: 1140px;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 26px;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+
+/*checkbox*/
+/* concertar*/
+
+#termos, #termos-label{
+    display: inline-block;
+    width: auto;
+}
+
+/*.checkbox #termos input {
+    all: unset;
+    width: 10px;
+    height: 10px;
+    border: 2px solid #717171;
+    transition: 0.4s;
+}
+
+.checkbox #termos input:checked {
+    background-color: #FFF;
+    border-radius: 10px;
+}*/
+/*a auteração do checkbox não pegou... */
+/*media*/
+@media (max-width: 500px) {
+    body{
+        background-color: #000;
+    }
+}
