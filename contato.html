@@ -2,58 +2,138 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-        href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&family=Roboto:wght@400;500;700&display=swap"
-        rel="stylesheet" />
-    <link rel="stylesheet" href="./assets/css/style.css" />
-    <link rel="stylesheet" href="./node_modules/aos/dist/aos.css" />
-    <script src="./node_modules/aos/dist/aos.js"></script>
-    <script defer src="./assets/js/script.js"></script>
-    <title>Contato</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- boot -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&family=Roboto:wght@400;500;700&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="./assets/css/style.css" />
+  <link rel="stylesheet" href="./node_modules/aos/dist/aos.css" />
+  <script src="./node_modules/aos/dist/aos.js"></script>
+  <!-- <script defer src="./assets/js/script.js"></script> -->
+  <title>Contato</title>
 </head>
 
 <body>
-    <header class="header">
-        <div class="menu-logo">
-            <img src="./assets/img/menu/logo.svg" alt="Logotipo da empresa" />
+  <header class="header">
+    <div class="menu-logo">
+      <img src="./assets/img/menu/logo.svg" alt="Logotipo da empresa" />
+    </div>
+    <nav class="links-internos">
+      <button id="btn-mobile">
+        Menu
+        <span id="hamburguer"></span>
+      </button>
+      <ul id="menu">
+        <li><a href="./index.html">Home</a></li>
+        <li><a href="./sobre.html">Sobre</a></li>
+        <li><a class="ativo" href="#">Contato</a></li>
+        <li><a href="./login.html">Login</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- COMEÇO -->
+  <div class="container" style="text-align: center">
+    <h3 data-aos="fade-right">Conheça a nossa equipe</h3>
+    <img src="./assets/img/contato/equipe-vr-omne.png" data-aos="fade-left" style="margin: auto; padding: 2em 0" />
+    <div class="frase-jordan">
+      <h3>“O TALENTO VENCE JOGOS, MAS SÓ O TRABALHO
+        EM EQUIPE GANHA CAMPEONATOS”</h3>
+      <p>Michael Jordan</p>
+    </div>
+  </div>
+
+  <main class="carrousel-parent">
+    <button onclick="carrousel.scrollLeft -= 400;"><img src="./assets/img/contato/seta-esquerda.svg" alt=""></button>
+
+    <section id="carrousel" class="carrousel">
+      <div class="item">
+        <div class="info">
+          <img src="./assets/img/contato/misael.png" />
+
+          <p>Misael</p>
+          <div>
+            <a href=""><img src="./assets/img/contato/github.svg" width="24" /></a href="">
+            <a href=""><img src="./assets/img/contato/instagram.svg" width="24" /></a href="">
+            <a href=""><img src="./assets/img/contato/linkedin.svg" width=" 24" /></a href="">
+          </div>
         </div>
-        <nav class="links-internos">
-            <button id="btn-mobile">Menu
-                <span id="hamburguer"></span>
-            </button>
-            <ul id="menu">
-                <li><a href="./index.html">Home</a></li>
-                <li><a href="./sobre.html">Sobre</a></li>
-                <li><a class="ativo" href="#">Contato</a></li>
-                <li><a href="./login.html">Login</a></li>
-            </ul>
-        </nav>
+        <div class="info">
+          <img src="./assets/img/contato/bruno.png" />
+
+          <p>Bruno</p>
+          <div>
+            <a href=""><img src="./assets/img/contato/github.svg" width="24" /></a href="">
+            <a href=""><img src="./assets/img/contato/instagram.svg" width="24" /></a href="">
+            <a href=""><img src="./assets/img/contato/linkedin.svg" width=" 24" /></a href="">
+          </div>
         </div>
-    </header>
+        <div class="info">
+          <img src="./assets/img/contato/marcos.png" />
 
+          <p>Marcos</p>
+          <div>
+            <a href=""><img src="./assets/img/contato/github.svg" width="24" /></a href="">
+            <a href=""><img src="./assets/img/contato/instagram.svg" width="24" /></a href="">
+            <a href=""><img src="./assets/img/contato/linkedin.svg" width=" 24" /></a href="">
+          </div>
+        </div>
+      </div>
+      <div class="item">
+        <div class="info">
+          <img src="./assets/img/contato/jessica.png" />
 
-    <!-- CODAR AQUI -->
+          <p>Jessica</p>
+          <div>
+            <a href=""><img src="./assets/img/contato/github.svg" width="24" /></a href="">
+            <a href=""><img src="./assets/img/contato/instagram.svg" width="24" /></a href="">
+            <a href=""><img src="./assets/img/contato/linkedin.svg" width=" 24" /></a href="">
+          </div>
+        </div>
+        <div class="info">
+          <img src="./assets/img/contato/misael.png" />
 
+          <p>Juliana</p>
+          <div>
+            <a href=""><img src="./assets/img/contato/github.svg" width="24" /></a href="">
+            <a href=""><img src="./assets/img/contato/instagram.svg" width="24" /></a href="">
+            <a href=""><img src="./assets/img/contato/linkedin.svg" width=" 24" /></a href="">
+          </div>
+        </div>
 
-    <footer class="footer">
-        <p>OMNE © 2022</p>
-        <span>
-            <a href=""><img src="./assets/img/footer/twitter.svg" width="28" alt="Twitter logo"></a>
-            <a href=""><img src="./assets/img/footer/instagram.svg" width="28" alt="Instagram logo"></a>
-        </span>
-    </footer>
+      </div>
+    </section>
 
-    <script>
-        AOS.init({
-            easing: 'ease-in-out-sine'
-        });
-    </script>
-    <script src="./assets/js/script.js"></script>
-    <script src="./assets/js/menu-mobile.js"></script>
+    <button onclick="carrousel.scrollLeft += 400;"><img src="./assets/img/contato/seta-direita.svg" alt=""></button>
+  </main>
+
+  <script></script>
+
+  <!-- FIM -->
+
+  <footer class="footer">
+    <p>OMNE © 2022</p>
+    <span>
+      <a href=""><img src="./assets/img/footer/twitter.svg" width="24" alt="Twitter logo" /></a>
+      <a href=""><img src="./assets/img/footer/instagram.svg" width="24" alt="Instagram logo" /></a>
+    </span>
+  </footer>
+
+  <script>
+    AOS.init({
+      easing: "ease-in-out-sine",
+    });
+  </script>
+  <!-- <script src="./assets/js/script.js"></script> -->
+  <script src="./assets/js/menu-mobile.js"></script>
 </body>
 
 </html>

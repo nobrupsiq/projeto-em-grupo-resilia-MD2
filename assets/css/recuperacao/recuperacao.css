@@ -1,0 +1,76 @@
+.recuperar-bg {
+    background: url(../../img/recuperar-senha/recuperar-bg.png);
+    padding: 80px 20px;
+}
+
+.recuperar-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    padding: 20px 20px;
+    max-width: 380px;
+    background: rgba(0, 0, 0, 0.76);
+}
+
+.recuperar-container h1 {
+    text-transform: uppercase;
+    font-size: 28px;
+    margin-bottom: 10px;
+}
+
+.recuperar-container p {
+    font-size: 12px;
+    margin-bottom: 20px;
+}
+
+.recuperar-dados label {
+    display: block;
+    font-size: 12px;
+    font-family: 'Poppins';
+    text-transform: uppercase;
+}
+
+.recuperar-dados input {
+    font-size: 14px;
+    width: 200px;
+    padding: 6px 10px;
+    background: rgba(151, 151, 151, 0.1);
+    border: 1px solid #fff;
+    border-radius: 4px;
+    color: #fff;
+    outline: none;
+    margin-bottom: 10px;
+}
+
+.recuperar-check {
+    background-color: #fff;
+    color: #000;
+    display: flex;
+    align-items: center;
+    border-radius: 4px;
+}
+
+.recuperar-check img {
+    width: 80px;
+    padding: 5px;
+}
+
+.recuperar-container button {
+    background: rgba(151, 151, 151, 0.1);
+    border: 2px solid #fff;
+    padding: 8px 50px;
+    text-transform: uppercase;
+    color: #fff;
+    border-radius: 4px;
+    margin: 20px 0 5px 0px;
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+.recuperar-container button:hover {
+    background: #000;
+    scale: 1.05;
+    box-shadow: 0px 0px 5px #fff;
+}

@@ -36,7 +36,21 @@
     </header>
 
 
-    <!-- CODAR AQUI -->
+    <main class="recuperar-bg">
+        <div class="recuperar-container">
+            <h1>Recuperar senha</h1>
+            <p>INFORME SEUS DADOS ABAIXO PARA RECUPERAR SUA SENHA</p>
+            <div class="recuperar-dados">
+                <label for="nome">Nome de usuário ou e-mail</label>
+                <input id="nome" type="email" name="nome" required>
+            </div>
+            <div class="recuperar-check">
+                <input type="checkbox" required>Não sou um robô
+                <img src="./assets/img/recuperar-senha/recaptcha.svg" alt="">
+            </div>
+            <button>Recuperar</button>
+        </div>
+    </main>
 
 
     <footer class="footer">
@@ -54,6 +68,7 @@
     </script>
     <script src="./assets/js/script.js"></script>
     <script src="./assets/js/menu-mobile.js"></script>
+    <script src="./assets/js/modal.js"></script>
 </body>
 
 </html>

@@ -1,14 +1,14 @@
-body{
+/* body {
     background-image: url(./assets/img/cadastro/cadastro-bg.png);
     background-position: 20% 30%;
     background-size: cover;
 }
 
-.titulo{
+.titulo {
     text-align: center;
 }
 /*formulario*/
-form{
+/* form {
     width: 709px;
     height: 985px;
     left: 365px;
@@ -22,22 +22,23 @@ form{
     background: rgba(0, 0, 0, 0.76);
     border: 2px solid black;
     border-radius: 10px;
-}
+} */
+
 /*conteudos que usam todo o comprimento do formulario*/
-.rg, 
-.email, 
+.rg,
+.email,
 .titulo,
-.divbutton{
+.divbutton {
     grid-column: span 2;
 }
 
 /*fui direto na div para ter uma separação entre as div's*/
-div{
+.cadastro div {
     padding: 10px;
 }
 /*label e input*/
 /*alterar a altura do input/ qunado eu altero se quebra*/
-label{
+.cadastro label {
     font-family: 'Roboto';
     font-style: normal;
     font-weight: 500;
@@ -45,40 +46,41 @@ label{
     line-height: 24px;
 }
 
-input, label{
+.cadastro input,
+.cadastro label {
     display: block;
     width: 100%;
 }
 
-input:focus, label:focus {
+.cadastro input:focus,
+.cadastro label:focus {
     outline: none;
 }
 
-input{
+.cadastro input {
     font-size: 0.9rem;
     padding: 3px;
     background: rgba(151, 151, 151, 0.23);
-    border: 1px solid #FFF;
+    border: 1px solid #fff;
     border-radius: 5px;
-    color: #FFF;
+    color: #fff;
     left: 730px;
     top: 808px;
 }
 
-input::placeholder {
-    color: #717171
+.cadastro input::placeholder {
+    color: #717171;
 }
-
 
 /*botão*/
 
-.divbutton{
+.divbutton {
     text-align: center;
 }
 .button {
     background-color: #000;
-    color: #FFF;
-    border: 3px solid #FFF;
+    color: #fff;
+    border: 3px solid #fff;
     border-radius: 4px;
     width: 253px;
     height: 43px;
@@ -96,7 +98,8 @@ input::placeholder {
 /*checkbox*/
 /* concertar*/
 
-#termos, #termos-label{
+#termos,
+#termos-label {
     display: inline-block;
     width: auto;
 }
@@ -115,8 +118,8 @@ input::placeholder {
 }*/
 /*a auteração do checkbox não pegou... */
 /*media*/
-@media (max-width: 500px) {
-    body{
+/* @media (max-width: 500px) {
+    body {
         background-color: #000;
     }
-}
+} */
