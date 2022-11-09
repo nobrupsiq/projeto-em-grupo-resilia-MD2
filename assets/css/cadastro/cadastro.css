@@ -94,7 +94,7 @@ input::placeholder {
 }
 
 /*checkbox*/
-/* concertar*/
+/* consertar*/
 
 #termos, #termos-label{
     display: inline-block;
@@ -114,6 +114,45 @@ input::placeholder {
     border-radius: 10px;
 }*/
 /*a auteração do checkbox não pegou... */
+
+/*modal----- modal esta ficando mais para a esquerda por conta do img global, tentei botar uma class para expecificar e deu merdinha, agora nem no meio quer ficar*/
+
+.modal-container{
+    width: 100vw;
+    height: 100vh;
+    background: rgba(0, 0, 0, .74);
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    z-index: 2000;
+    display: none;
+    justify-content: center;
+    align-items: center;
+}
+.modal{
+    width: 60%;
+    min-width: 300px;
+}
+
+.modal-container.mostrar{
+    display: flex;
+}
+/* animação do modal*/
+@keyframes modal{
+    from{
+        opacity: 0;
+        transform: translate3d(0, -60px, 0);
+    }
+    to{
+        opacity: 1;
+        transform: translate3d(0, 0, 0);
+    }
+}
+
+.mostrar .modal{
+    animation: modal .3s;
+}
+
 /*media*/
 @media (max-width: 500px) {
     body{
