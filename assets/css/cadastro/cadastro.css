@@ -1,18 +1,15 @@
-body{
-    background-image: url(./assets/img/cadastro/cadastro-bg.png);
-    background-position: 20% 30%;
-    background-size: cover;
-}
-
-.titulo{
+.titulo {
     text-align: center;
+    margin-top: 40px;
+    margin-bottom: 60px;
 }
 /*formulario*/
-form{
+.cadastro form {
     width: 709px;
     height: 985px;
     left: 365px;
     top: 249px;
+    margin-top: 60px;
     margin-left: auto;
     margin-right: auto;
     padding: 20px;
@@ -24,61 +21,68 @@ form{
     border-radius: 10px;
 }
 /*conteudos que usam todo o comprimento do formulario*/
-.rg, 
-.email, 
+.rg,
+.email,
 .titulo,
-.divbutton{
+.divbutton {
     grid-column: span 2;
 }
 
 /*fui direto na div para ter uma separação entre as div's*/
-div{
+.cadastro div {
     padding: 10px;
 }
 /*label e input*/
 /*alterar a altura do input/ qunado eu altero se quebra*/
-label{
+.cadastro label {
     font-family: 'Roboto';
     font-style: normal;
     font-weight: 500;
     font-size: 16px;
     line-height: 24px;
+    text-transform: uppercase;
 }
 
-input, label{
+.titulo h1 {
+    font-size: 48px;
+    text-transform: uppercase;
+}
+
+.cadastro input,
+label {
     display: block;
     width: 100%;
 }
 
-input:focus, label:focus {
+.cadastro input:focus,
+label:focus {
     outline: none;
 }
 
-input{
-    font-size: 0.9rem;
-    padding: 3px;
+.cadastro input {
+    font-size: 16px;
+    padding: 10px 4px;
     background: rgba(151, 151, 151, 0.23);
-    border: 1px solid #FFF;
+    border: 1px solid #fff;
     border-radius: 5px;
-    color: #FFF;
+    color: #fff;
     left: 730px;
     top: 808px;
 }
 
-input::placeholder {
-    color: #717171
+.cadastro input::placeholder {
+    color: #717171;
 }
-
 
 /*botão*/
 
-.divbutton{
+.divbutton {
     text-align: center;
 }
 .button {
     background-color: #000;
-    color: #FFF;
-    border: 3px solid #FFF;
+    color: #fff;
+    border: 3px solid #fff;
     border-radius: 4px;
     width: 253px;
     height: 43px;
@@ -91,71 +95,20 @@ input::placeholder {
     line-height: 26px;
     text-transform: uppercase;
     cursor: pointer;
-}
-
-/*checkbox*/
-/* consertar*/
-
-#termos, #termos-label{
-    display: inline-block;
-    width: auto;
-}
-
-/*.checkbox #termos input {
-    all: unset;
-    width: 10px;
-    height: 10px;
-    border: 2px solid #717171;
     transition: 0.4s;
 }
 
-.checkbox #termos input:checked {
-    background-color: #FFF;
-    border-radius: 10px;
-}*/
-/*a auteração do checkbox não pegou... */
-
-/*modal----- modal esta ficando mais para a esquerda por conta do img global, tentei botar uma class para expecificar e deu merdinha, agora nem no meio quer ficar*/
-
-.modal-container{
-    width: 100vw;
-    height: 100vh;
-    background: rgba(0, 0, 0, .74);
-    position: fixed;
-    top: 0px;
-    left: 0px;
-    z-index: 2000;
-    display: none;
-    justify-content: center;
-    align-items: center;
-}
-.modal{
-    width: 60%;
-    min-width: 300px;
-}
-
-.modal-container.mostrar{
-    display: flex;
-}
-/* animação do modal*/
-@keyframes modal{
-    from{
-        opacity: 0;
-        transform: translate3d(0, -60px, 0);
-    }
-    to{
-        opacity: 1;
-        transform: translate3d(0, 0, 0);
-    }
-}
-
-.mostrar .modal{
-    animation: modal .3s;
+.button:hover {
+    scale: 1.04;
 }
 
 /*media*/
-@media (max-width: 500px) {
-    body{
+@media (max-width: 768px) {
+    body {
         background-color: #000;
+    }
+    .cadastro form {
+        display: block;
+        max-width: 360px;
     }
 }
