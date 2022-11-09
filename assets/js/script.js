@@ -11,7 +11,7 @@ const limparFormulario = (endereco) => {
    document.getElementById("cidade").value = "";
    document.getElementById("estado").value = "";
 };
-//validação do campo do cep ---- esta parecendo o input tenta alterar para o span, que fica melhor,(se de tempo)
+//validação do campo do cep ----
 const cepValido = (cep) => cep.length === 8 && /^[0-9]+$/.test(cep);
 const pesquisarCep = async () => {
    limparFormulario();
