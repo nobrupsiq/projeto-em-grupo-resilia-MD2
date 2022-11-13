@@ -1,4 +1,4 @@
-const btn = document.querySelector('.login-btn');
+const btn = document.querySelector('.recuperar-btn');
 const modal = document.querySelector('.login-modal');
 const fecharModal = document.querySelector('.closeModal');
 

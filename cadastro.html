@@ -6,11 +6,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&family=Roboto:wght@400;500;700&display=swap" rel="stylesheet" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&family=Roboto:wght@400;500;700&display=swap"
+        rel="stylesheet" />
     <link rel="stylesheet" href="./assets/css/style.css" />
     <link rel="stylesheet" href="./node_modules/aos/dist/aos.css" />
     <script src="./node_modules/aos/dist/aos.js"></script>
-    <script defer src="./assets/js/script.js"></script>
+    <!-- <script defer src="./assets/js/script.js"></script> -->
     <title>Cadastro</title>
 </head>
 
@@ -32,12 +34,9 @@
         </nav>
         </div>
     </header>
-    <div class="modal">
-        <span class="fechar">X</span>
-        <img src="./assets/img/cadastro/MODAL-CADASTRADO.png" alt="">
-    </div>
     <!--Formulario-->
     <main class="cadastro">
+
         <form id="form" action="" method="">
             <div class="titulo">
                 <h1>Cadastro</h1>
@@ -101,8 +100,11 @@
 
             <!--Botão-->
             <div class="divbutton">
+                <div class="cadastro-modal">
+                    <img src="./assets/img/cadastro/MODAL-CADASTRADO.png" alt="">
+                    <span class="closeModal">X</span>
+                </div>
                 <button class="button">Cadastro</button>
-
             </div>
 
         </form>
